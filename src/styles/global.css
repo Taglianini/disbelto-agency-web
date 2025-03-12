@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+     @apply bg-[#13131E] text-white font-['Space_Mono'] min-h-screen flex items-center justify-center;
+ }
+ 
+ h1 {
+     @apply text-6xl font-bold mb-4;
+ }
+ 
+ p {
+     @apply text-lg;
+ }
