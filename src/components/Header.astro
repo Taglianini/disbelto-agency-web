@@ -1,14 +1,44 @@
-<header class="max-w-[1250px] mx-auto flex items-center justify-between py-2 px-4 mt-6">
-     <div class="flex items-center">
-         <a href="/">
-             <img src="/DisbeltoIcon.svg" alt="Disbelto Agency" class="h-8"/>
-         </a>
-     </div>
-     <nav class="flex items-center gap-8">  <a href="/portfolio">PORTFOLIO</a>
-         <a href="/servicios">SERVICIOS</a>
-         <a href="/nosotros">NOSOTROS</a>
-         <a href="/contacto">CONTACTO</a>
-         <a href="/empezar" 
-             class="bg-white text-black py-2 px-4 rounded-full shadow-md font-medium">EMPEZAR</a>
-     </nav>
- </header>
+<header class="max-w-[90%] mx-auto flex items-center justify-between py-4 px-6 md:px-12 bg-transparent md:bg-[#13131E] md:rounded-full mt-5">
+    <a href="/">
+        <img src="/DisbeltoIcon.svg" alt="Disbelto Agency" class="h-10"/>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-6 flex-grow justify-end">
+        <a href="/servicios">SERVICIOS</a>
+        <a href="/nosotros">NOSOTROS</a>
+        <a href="/contacto">CONTACTO</a>
+        <a href="/empezar" class="bg-white text-black py-2 px-4 rounded-full shadow-md font-medium">EMPEZAR</a>
+    </nav>
+
+    <button id="menu-btn" class="md:hidden w-10 h-10 flex items-center justify-center bg-white text-black rounded-full shadow-md">
+        <span class="text-xl">+</span>
+    </button>
+</header>
+
+<div id="mobile-menu" class="absolute top-16 left-1/2 -translate-x-1/2 bg-[#13131E] p-6 px-8 flex flex-col items-center gap-4 rounded-lg md:hidden">
+    <a href="/portfolio" class="py-2 block text-white">PORTFOLIO</a>
+    <a href="/servicios" class="py-2 block text-white">SERVICIOS</a>  
+    <a href="/nosotros" class="py-2 block text-white">NOSOTROS</a>
+    <a href="/contacto" class="py-2 block text-white">CONTACTO</a>
+    <a href="/empezar" class="mt-4 bg-white text-black py-2 px-4 rounded-full shadow-md font-medium block">
+        EMPEZAR
+    </a>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        if (!menuBtn || !mobileMenu) {
+            console.error("No se encontró el botón o el menú móvil.");
+            return;
+        }
+    
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    });
+    </script>
+
+
