@@ -9,9 +9,8 @@ body {
  }
  
  h1 {
-     @apply text-5xl md:text-6xl font-bold mb-4;
+     @apply text-3xl md:text-7xl sm:font-bold mb-2;
  }
- 
  p {
      @apply text-lg;
  }
