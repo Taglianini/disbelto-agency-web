@@ -1,7 +1,9 @@
 ---
+import Masbtn from "src/assets/desktop/Masbtn.astro";
+import WorksMobile from "src/assets/mobile/WorksMobile.astro";
 
 ---
-<div class="hidden md:flex justify-center py-16 px-4">
+<div id="WORKS" class="hidden md:flex justify-center py-16 px-4">
   <div class="w-full max-w-[1520px] grid gap-8">
     <div class="relative rounded-[20px] overflow-hidden">
       <img
@@ -13,9 +15,7 @@
         NOMBRE DEL CLIENTE
       </div>
       <div class="absolute bottom-6 right-6 flex items-center gap-2">
-        <a class="text-[#FFACE4] text-sm font-medium cursor-pointer border border-[#FFACE4] px-4 py-2 rounded-full hover:bg-[#FFACE4] hover:text-[#13131E] transition">
-          VER MÁS
-        </a>
+        <Masbtn />
         <a class="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 cursor-pointer border border-[#FFACE4] rounded-full text-[#FFACE4] text-xl hover:text-[#13131E] hover:bg-[#FFACE4]">+</a>
       </div>
     </div>
@@ -31,9 +31,7 @@
           NOMBRE
         </div>
         <div class="absolute bottom-6 right-6 flex items-center gap-2">
-          <a class="text-[#93FF57] text-sm font-medium border cursor-pointer border-[#93FF57] px-4 py-2 rounded-full hover:bg-[#93FF57] hover:text-[#13131E] transition">
-            VER MÁS
-          </a>
+          <Masbtn />
           <a class="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 cursor-pointer border border-[#93FF57] rounded-full text-[#93FF57] text-xl hover:text-[#13131E] hover:bg-[#93FF57]">+</a>
         </div>
       </div>
@@ -48,9 +46,7 @@
           NOMBRE
         </div>
         <div class="absolute bottom-6 right-6 flex items-center gap-2">
-          <a class="text-[#93FF57] text-sm font-medium border border-[#93FF57] cursor-pointer px-4 py-2 rounded-full hover:bg-[#93FF57] hover:text-[#13131E] transition">
-            VER MÁS
-          </a>
+          <Masbtn />
           <a class="flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 border cursor-pointer border-[#93FF57] rounded-full text-[#93FF57] text-xl hover:text-[#13131E] hover:bg-[#93FF57]">+</a>
         </div>
       </div>
@@ -59,107 +55,4 @@
 </div>
 
 <!-- Carrusel solo para móviles -->
-<div class="block md:hidden relative px-4 py-10">
-
-  <!-- Contenedor del carrusel -->
-  <div id="carouselMobile" class="overflow-hidden rounded-[30px] relative">
-    <div id="slides" class="flex transition-transform duration-500 ease-in-out">
-      <!-- Slide 1 -->
-      <div class="min-w-full relative">
-        <img src="/Client1.jpg" class="w-[350px] h-[250px] object-cover rounded-[20px]" alt="Cliente 1" />
-        <div class="absolute top-6 left-1/2 -translate-x-1/2 bg-[#93FF57] text-[#13131E] text-xs font-semibold px-4 py-1.5 rounded-full shadow-md">
-          CLIENTE 1
-        </div>
-       <div class="absolute bottom-4 right-4 flex items-center gap-2">
-        <!-- Contenedor oscuro detrás de los botones -->
-        <div class="absolute -inset-2 bg-black/40 backdrop-blur-md rounded-full z-[-1]"></div>
-
-        <!-- Botón VER MÁS -->
-        <a class="text-[#FFACE4] text-xs font-medium border border-[#FFACE4] px-3 py-1.5 rounded-full hover:bg-[#FFACE4] hover:text-[#13131E] transition cursor-pointer">
-          VER MÁS
-        </a>
-
-        <!-- Botón + -->
-        <a class="flex items-center justify-center w-7 h-7 border border-[#FFACE4] rounded-full text-[#FFACE4] text-lg hover:text-[#13131E] hover:bg-[#FFACE4] cursor-pointer">
-          +
-        </a>
-      </div>
-
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="min-w-full relative">
-        <img src="/Client2.jpg" class="w-[350px] h-[250px] object-cover rounded-[20px]" alt="Cliente 2" />
-        <div class="absolute top-6 left-1/2 -translate-x-1/2 bg-[#93FF57] text-[#13131E] text-xs font-semibold px-4 py-1.5 rounded-full shadow-md">
-          CLIENTE 2
-        </div>
-        <div class="absolute bottom-4 right-4 flex items-center gap-2">
-          <a class="text-[#FFACE4] text-xs font-medium border border-[#FFACE4] px-3 py-1.5 rounded-full hover:bg-[#FFACE4] hover:text-[#13131E] transition cursor-pointer">
-            VER MÁS
-          </a>
-          <a class="flex items-center justify-center w-7 h-7 border border-[#FFACE4] rounded-full text-[#FFACE4] text-lg hover:text-[#13131E] hover:bg-[#FFACE4] cursor-pointer">
-            +
-          </a>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="min-w-full relative">
-        <img src="/Client3.jpg" class="w-[350px] h-[250px] object-cover rounded-[20px]" alt="Cliente 3" />
-        <div class="absolute top-6 left-1/2 -translate-x-1/2 bg-[#93FF57] text-[#13131E] text-xs font-semibold px-4 py-1.5 rounded-full shadow-md">
-          CLIENTE 3
-        </div>
-        <div class="absolute bottom-4 right-4 flex items-center gap-2">
-          <a class="text-[#FFACE4] text-xs font-medium border border-[#FFACE4] px-3 py-1.5 rounded-full hover:bg-[#FFACE4] hover:text-[#13131E] transition cursor-pointer">
-            VER MÁS
-          </a>
-          <a class="flex items-center justify-center w-7 h-7 border border-[#FFACE4] rounded-full text-[#FFACE4] text-lg hover:text-[#13131E] hover:bg-[#FFACE4] cursor-pointer">
-            +
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Botón anterior -->
-    <button id="prevBtn" class="absolute top-1/2 left-2 -translate-y-1/2 bg-white backdrop-blur-md w-9 h-9 flex items-center justify-center rounded-full shadow">
-      <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-      </svg>
-    </button>
-
-    <!-- Botón siguiente -->
-    <button id="nextBtn" class="absolute top-1/2 right-2 -translate-y-1/2 bg-white backdrop-blur-md w-9 h-9 flex items-center justify-center rounded-full shadow">
-      <svg class="w-5 h-5 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-      </svg>
-    </button>
-  </div>
-</div>
-
-<!-- JavaScript del carrusel -->
-<script>
-  let slides: HTMLElement | null = null;
-let currentSlide = 0;
-
-document.addEventListener("DOMContentLoaded", function () {
-  slides = document.getElementById("slides");
-  if (!slides) return;
-
-  const totalSlides = slides.children.length;
-
-  function updateSlide() {
-    slides!.style.transform = `translateX(-${currentSlide * 100}%)`;
-  }
-
-  document.getElementById("nextBtn")?.addEventListener("click", function () {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    updateSlide();
-  });
-
-  document.getElementById("prevBtn")?.addEventListener("click", function () {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    updateSlide();
-  });
-});
-</script>
-</div>
+<WorksMobile />
